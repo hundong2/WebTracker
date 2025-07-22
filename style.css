@@ -1,0 +1,80 @@
+body {
+  font-family: sans-serif;
+  width: 500px;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.controls {
+  margin-bottom: 10px;
+}
+
+#api-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#api-list li {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+#api-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.hidden {
+  display: none;
+}
+
+#details-panel {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.tab-link {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.tab-link.active {
+  background-color: #ddd;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.copy-btn {
+  margin-top: 10px;
+}

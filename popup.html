@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>REST API Snipper</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>REST API Snipper</h1>
+    <div class="controls">
+      <button id="toggle-sniffing">Start Sniffing</button>
+      <button id="clear-list">Clear List</button>
+    </div>
+    <ul id="api-list"></ul>
+    <div id="details-panel" class="hidden">
+      <h2>API Details</h2>
+      <div class="tabs">
+        <button class="tab-link active" data-tab="csharp">C#</button>
+        <button class="tab-link" data-tab="python">Python</button>
+      </div>
+      <div id="csharp" class="tab-content active">
+        <pre><code id="csharp-code"></code></pre>
+        <button class="copy-btn" data-lang="csharp">Copy Code</button>
+      </div>
+      <div id="python" class="tab-content">
+        <pre><code id="python-code"></code></pre>
+        <button class="copy-btn" data-lang="python">Copy Code</button>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
